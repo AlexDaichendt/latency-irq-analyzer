@@ -5,12 +5,14 @@ export interface ControlsSliceState {
   currentCPU: number;
   normalize: boolean;
   showWorstCase: boolean;
+  worstCaseOffset: number;
 }
 
 const initialState: ControlsSliceState = {
   currentCPU: 0,
   normalize: true,
   showWorstCase: true,
+  worstCaseOffset: 0,
 };
 
 export const controlsSlice = createSlice({
@@ -26,10 +28,17 @@ export const controlsSlice = createSlice({
     setShowWorstCase: (state, action: PayloadAction<boolean>) => {
       state.showWorstCase = action.payload;
     },
+    setWorstCaseOffset: (state, action: PayloadAction<number>) => {
+      state.worstCaseOffset = action.payload;
+    },
   },
 });
 
-export const { setCurrentCPU, setNormalize, setShowWorstCase } =
-  controlsSlice.actions;
+export const {
+  setCurrentCPU,
+  setNormalize,
+  setShowWorstCase,
+  setWorstCaseOffset,
+} = controlsSlice.actions;
 
 export default controlsSlice.reducer;

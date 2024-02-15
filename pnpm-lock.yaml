@@ -44,6 +44,9 @@ dependencies:
   react:
     specifier: ^18.2.0
     version: 18.2.0
+  react-debounce-render:
+    specifier: ^8.0.2
+    version: 8.0.2(react@18.2.0)
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
@@ -2006,6 +2009,10 @@ packages:
       p-locate: 5.0.0
     dev: true
 
+  /lodash.debounce@4.0.8:
+    resolution: {integrity: sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==}
+    dev: false
+
   /lodash.merge@4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
@@ -2194,6 +2201,16 @@ packages:
   /queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
+
+  /react-debounce-render@8.0.2(react@18.2.0):
+    resolution: {integrity: sha512-tVdMjXJl38LK2JSr5KiCHdnHi8LlQA4jFXiMQfw0ZWDuMmAtDP63lK49RKeYnCXM9r0HKgKIFmNPZxQpeGjQmg==}
+    peerDependencies:
+      react: ^17.0.2
+    dependencies:
+      hoist-non-react-statics: 3.3.2
+      lodash.debounce: 4.0.8
+      react: 18.2.0
+    dev: false
 
   /react-dom@18.2.0(react@18.2.0):
     resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}

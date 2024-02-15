@@ -4,6 +4,7 @@ import NormalizeCheckbox from "./NormalizeCheckbox";
 import ShowWorstCaseCheckbox from "./ShowWorstCaseCheckbox";
 import { useSelector } from "react-redux";
 import { RootState } from "../../state/store";
+import WorstCaseSlider from "./WorstCaseSlider";
 
 export default function PlotControl() {
   const hasWorstCaseFile = useSelector(
@@ -18,6 +19,7 @@ export default function PlotControl() {
         <NormalizeCheckbox />
         {hasWorstCaseFile && <ShowWorstCaseCheckbox />}
       </Box>
+      <WorstCaseSlider />
     </>
   );
 }
