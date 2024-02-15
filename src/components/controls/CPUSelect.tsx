@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../state/store";
 import { Autocomplete, TextField } from "@mui/material";
-import { setCurrentCPU } from "../../state/controls";
+import { setCurrentCPU } from "../../state/controlsSlice";
 
 export default function CPUSelect() {
   const dispatch = useDispatch();

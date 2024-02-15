@@ -1,7 +1,7 @@
 import { Checkbox, FormControlLabel } from "@mui/material";
 import { RootState } from "../../state/store";
 import { useDispatch, useSelector } from "react-redux";
-import { setNormalize } from "../../state/controls";
+import { setNormalize } from "../../state/controlsSlice";
 
 export default function NormalizeCheckbox() {
   const dispatch = useDispatch();

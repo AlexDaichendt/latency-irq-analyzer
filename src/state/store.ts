@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import controlsReducer from "./controls";
+import controlsReducer from "./controlsSlice";
 import irqReducer from "./irqSlice";
+import worstcaseReducer from "./worstcaseSlice";
 
 export const store = configureStore({
   reducer: {
     irq: irqReducer,
+    worstcase: worstcaseReducer,
     controls: controlsReducer,
   },
 });

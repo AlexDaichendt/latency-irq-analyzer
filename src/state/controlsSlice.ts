@@ -4,11 +4,13 @@ import type { PayloadAction } from "@reduxjs/toolkit";
 export interface ControlsSliceState {
   currentCPU: number;
   normalize: boolean;
+  showWorstCase: boolean;
 }
 
 const initialState: ControlsSliceState = {
   currentCPU: 0,
-  normalize: false,
+  normalize: true,
+  showWorstCase: true,
 };
 
 export const controlsSlice = createSlice({
@@ -21,9 +23,13 @@ export const controlsSlice = createSlice({
     setNormalize: (state, action: PayloadAction<boolean>) => {
       state.normalize = action.payload;
     },
+    setShowWorstCase: (state, action: PayloadAction<boolean>) => {
+      state.showWorstCase = action.payload;
+    },
   },
 });
 
-export const { setCurrentCPU, setNormalize } = controlsSlice.actions;
+export const { setCurrentCPU, setNormalize, setShowWorstCase } =
+  controlsSlice.actions;
 
 export default controlsSlice.reducer;

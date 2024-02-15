@@ -26,6 +26,9 @@ dependencies:
   '@mui/system':
     specifier: ^5.15.9
     version: 5.15.9(@emotion/react@11.11.3)(@emotion/styled@11.11.0)(@types/react@18.2.55)(react@18.2.0)
+  '@oneidentity/zstd-js':
+    specifier: ^1.0.3
+    version: 1.0.3
   '@reduxjs/toolkit':
     specifier: ^2.2.0
     version: 2.2.0(react-redux@9.1.0)(react@18.2.0)
@@ -953,6 +956,12 @@ packages:
       fastq: 1.17.1
     dev: true
 
+  /@oneidentity/zstd-js@1.0.3:
+    resolution: {integrity: sha512-Jm6sawqxLzBrjC4sg2BeXToa33yPzUmq20CKsehKY2++D/gHb/oSwVjNgT+RH4vys+r8FynrgcNzGwhZWMLzfQ==}
+    dependencies:
+      '@types/emscripten': 1.39.10
+    dev: false
+
   /@popperjs/core@2.11.8:
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
     dev: false
@@ -1108,6 +1117,10 @@ packages:
     dependencies:
       '@babel/types': 7.23.9
     dev: true
+
+  /@types/emscripten@1.39.10:
+    resolution: {integrity: sha512-TB/6hBkYQJxsZHSqyeuO1Jt0AB/bW6G7rHt9g7lML7SOF6lbgcHvw/Lr+69iqN0qxgXLhWKScAon73JNnptuDw==}
+    dev: false
 
   /@types/estree@1.0.5:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}

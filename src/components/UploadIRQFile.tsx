@@ -63,7 +63,7 @@ export default function InputFileUpload(props: InputFileUploadProps) {
         startIcon={<CloudUploadIcon />}
         sx={{ mr: 2 }}
       >
-        Select file
+        Select IRQ file
         <VisuallyHiddenInput type="file" onChange={handleFileChosen} />
       </Button>
 

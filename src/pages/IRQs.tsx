@@ -6,7 +6,8 @@ import { Box, Typography } from "@mui/material";
 import { useSelector } from "react-redux";
 import DrawerAppBar from "../components/AppBar";
 import IRQPlot from "../components/IRQPlot";
-import InputFileUpload from "../components/UploadFile";
+import InputFileUpload from "../components/UploadIRQFile";
+import InputWorstCaseFile from "../components/UploadWorstCaseFile";
 import PlotControl from "../components/controls/PlotControl";
 import { RootState } from "../state/store";
 
@@ -29,6 +30,9 @@ function App() {
         </Typography>
 
         <InputFileUpload showInformation />
+        <br />
+        <br />
+        <InputWorstCaseFile showInformation />
 
         {hasFile && (
           <>
