@@ -1,9 +1,5 @@
 import { Box } from "@mui/material";
-import Highcharts, {
-  Options,
-  SeriesLineOptions,
-  SeriesOptionsType,
-} from "highcharts";
+import Highcharts, { Options, SeriesLineOptions } from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import { useSelector } from "react-redux";
 import { RootState } from "../state/store";
